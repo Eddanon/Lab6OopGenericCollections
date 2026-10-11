@@ -89,6 +89,18 @@
                 Console.WriteLine("EEmployee2 object does not exist in the list.");
             }
 
+            /* Find and return the first male employee
+             * The Find() method expects to receive a lamda expression or method of the 
+             * delegate type Predicate<T>, which is a method with the parameter of the
+             * type T, and a bool return type.
+             * Normally you would use a lamda expression
+             * as the parameter of the Find() method.
+             * We haven't learnt about lamda yet.
+             * I put the method IsMale as a parameter - since it matches
+             * the Predicate<Employee> type it works.
+             */
+            // Console.WriteLine($"First male employee: {employeeList.Find()}");
+
         }
     }
 }
