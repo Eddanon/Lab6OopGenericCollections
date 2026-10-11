@@ -6,9 +6,29 @@ namespace Lab6OopGenericCollections
 {
     internal class Employee
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
         public string Gender { get; set; }
         public decimal Salary { get; set; }
+
+        // Constructor
+        public Employee(string id, string name, string gender, decimal salary)
+        {
+            Id = id;
+            Name = name;
+            Gender = gender;
+            Salary = salary;
+        }
+
+        // Print information method
+        public void PrintInfo()
+        {
+            Console.WriteLine($"\nEMPLOYEE INFORMATION:");
+            Console.WriteLine($"ID: {Id}\n" +
+                              $"Name: {Name}\n" +
+                              $"Gender: {Gender}\n" +
+                              $"Salary: {Salary}");
+        }
+
     }
 }
