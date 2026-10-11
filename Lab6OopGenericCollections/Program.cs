@@ -19,6 +19,12 @@
             employees.Push(employeeFour);
             employees.Push(employeeFive);
 
+            // Print all objects in the stack.
+            foreach (Employee employee in employees)
+            {
+                employee.PrintInfo();
+                Console.WriteLine($"\nObjects left in the stack: {employees.Count}");
+            }
         }
     }
 }
