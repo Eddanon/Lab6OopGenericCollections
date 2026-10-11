@@ -20,5 +20,15 @@ namespace Lab6OopGenericCollections
             Salary = salary;
         }
 
+        // Print information method
+        public void PrintInfo()
+        {
+            Console.WriteLine($"\nEMPLOYEE INFORMATION:");
+            Console.WriteLine($"ID: {Id}\n" +
+                              $"Name: {Name}\n" +
+                              $"Gender: {Gender}\n" +
+                              $"Salary: {Salary}");
+        }
+
     }
 }
