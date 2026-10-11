@@ -64,11 +64,11 @@
             Console.WriteLine("------------------------------");
             if (employees.Contains(employeeThree))
             {
-                Console.WriteLine($"Employee three, {employeeThree.Name}, is in stack.");
+                Console.WriteLine($"Employee 3, {employeeThree.Name}, is in stack.");
             }
             else
             {
-                Console.WriteLine("Employee three isn't in the stack.");
+                Console.WriteLine("Employee 3 isn't in the stack.");
             }
 
         }
