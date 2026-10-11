@@ -23,8 +23,25 @@
             foreach (Employee employee in employees)
             {
                 employee.PrintInfo();
-                Console.WriteLine($"\nObjects left in the stack: {employees.Count}");
+                Console.WriteLine($"\nEmployees left in the stack: {employees.Count}");
             }
+
+            /* Remove and return objects with the Pop() method
+             * A foreach loop can't be used here because removing
+             * items from a collection while it's being iterated
+             * throws an InvalidOperationException.
+             */
+            Console.WriteLine($"\nFired employee: {employees.Pop().Name}\n" +
+                              $"Employees left: {employees.Count}");
+            Console.WriteLine($"\nFired employee: {employees.Pop().Name}\n" +
+                              $"Employees left: {employees.Count}");
+            Console.WriteLine($"\nFired employee: {employees.Pop().Name}\n" +
+                              $"Employees left: {employees.Count}");
+            Console.WriteLine($"\nFired employee: {employees.Pop().Name}\n" +
+                              $"Employees left: {employees.Count}");
+            Console.WriteLine($"\nFired employee: {employees.Pop().Name}\n" +
+                              $"Employees left: {employees.Count}");
+
         }
     }
 }
