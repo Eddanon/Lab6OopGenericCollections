@@ -27,7 +27,7 @@ namespace Lab6OopGenericCollections
             Console.WriteLine($"ID: {Id}\n" +
                               $"Name: {Name}\n" +
                               $"Gender: {Gender}\n" +
-                              $"Salary: {Salary}");
+                              $"Salary: {Salary} kr");
         }
 
         /* Method that returns true if employee is male.
