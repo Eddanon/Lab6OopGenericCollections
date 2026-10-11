@@ -71,6 +71,14 @@
                 Console.WriteLine("Employee 3 isn't in the stack.");
             }
 
+            // List with employees
+            List<Employee> employeeList = new List<Employee>();
+            employeeList.Add(employeeOne);
+            employeeList.Add(employeeTwo);
+            employeeList.Add(employeeThree);
+            employeeList.Add(employeeFour);
+            employeeList.Add(employeeFive);
+
         }
     }
 }
