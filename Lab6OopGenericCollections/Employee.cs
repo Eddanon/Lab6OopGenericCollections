@@ -30,5 +30,15 @@ namespace Lab6OopGenericCollections
                               $"Salary: {Salary}");
         }
 
+        /* Method that returns true if employee is male.
+         * It takes an Employee and returns a bool, so it matches
+         * Predicate<Employee>, meaning it can be used as a parameter
+         * in the methods Find() and FindAll() on employeeList.
+         */
+        public static bool IsMale(Employee employee)
+        {
+            return employee.Gender == "Male";
+        }
+
     }
 }
