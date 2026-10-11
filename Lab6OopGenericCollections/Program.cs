@@ -104,11 +104,12 @@
              */
             Console.WriteLine("------------------------------");
             Employee firstMale = employeeList.Find(Employee.IsMale);
-            Console.WriteLine($"First male employee: {firstMale.Name}");
+            Console.WriteLine("First male employee:");
+            firstMale.PrintInfo();
 
             // List containing all the male employees
-            Console.WriteLine("------------------------------");
             // Male employees are added with the FindAll() and IsMale methods.
+            Console.WriteLine("------------------------------");
             List<Employee> maleEmployeeList = employeeList.FindAll(Employee.IsMale);
             Console.WriteLine("All male employees:");
             foreach (Employee employee in maleEmployeeList)
