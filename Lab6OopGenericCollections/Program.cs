@@ -53,11 +53,11 @@
 
             // Return two objects with Peek() method
             Console.WriteLine("------------------------------");
-            Console.WriteLine("RETRIEVE USING PEEK() METHOD");
+            Console.WriteLine("RETRIEVE USING PEEK() METHOD\n");
             for (int i = 0; i < 2; i++)
             {
                 Console.WriteLine($"{employees.Peek().Name}");
-                Console.WriteLine($"Employees left in the stack: {employees.Count}");
+                Console.WriteLine($"Employees left in the stack: {employees.Count}\n");
             }
 
             // Check if object nr. 3 exists in stack.
@@ -70,6 +70,53 @@
             {
                 Console.WriteLine("Employee 3 isn't in the stack.");
             }
+
+            // List with employees
+            List<Employee> employeeList = new List<Employee>();
+            employeeList.Add(employeeOne);
+            employeeList.Add(employeeTwo);
+            employeeList.Add(employeeThree);
+            employeeList.Add(employeeFour);
+            employeeList.Add(employeeFive);
+
+            // Check if the list contains employeeTwo
+            Console.WriteLine("------------------------------");
+            if (employeeList.Contains(employeeTwo))
+            {
+                Console.WriteLine("Employee2 object exists in the list.");
+            }
+            else
+            {
+                Console.WriteLine("EEmployee2 object does not exist in the list.");
+            }
+
+            /* Find and return the first male employee
+             * The Find() method expects to receive a lambda expression or method of the 
+             * delegate type Predicate<T>, which is a method with the parameter of the
+             * type T, and a bool return type.
+             * Normally you would use a lambda expression
+             * as the parameter of the Find() method.
+             * We haven't learnt about lambda yet.
+             * I put the method IsMale as a parameter - since it matches
+             * the Predicate<Employee> type it works.
+             * Find() returns the first for which IsMale returns true,
+             * or null if there is none.
+             */
+            Console.WriteLine("------------------------------");
+            Employee firstMale = employeeList.Find(Employee.IsMale);
+            Console.WriteLine("First male employee:");
+            firstMale.PrintInfo();
+
+            // List containing all the male employees
+            // Male employees are added with the FindAll() and IsMale methods.
+            Console.WriteLine("------------------------------");
+            List<Employee> maleEmployeeList = employeeList.FindAll(Employee.IsMale);
+            Console.WriteLine("All male employees:");
+            foreach (Employee employee in maleEmployeeList)
+            {
+                employee.PrintInfo();
+            }
+
 
         }
     }
