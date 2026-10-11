@@ -60,6 +60,17 @@
                 Console.WriteLine($"Employees left in the stack: {employees.Count}");
             }
 
+            // Check if object nr. 3 exists in stack.
+            Console.WriteLine("------------------------------");
+            if (employees.Contains(employeeThree))
+            {
+                Console.WriteLine($"Employee three, {employeeThree.Name}, is in stack.");
+            }
+            else
+            {
+                Console.WriteLine("Employee three isn't in the stack.");
+            }
+
         }
     }
 }
