@@ -10,6 +10,15 @@
             var employeeThree = new Employee("ID03", "Lina", "Femamle", 22000);
             var employeeFour = new Employee("ID04", "Niklas", "Male", 28000);
             var employeeFive = new Employee("ID05", "Gunilla", "Female", 27000);
+
+            // Stack with the persons.
+            var employees = new Stack<Employee>();
+            employees.Push(employeeOne);
+            employees.Push(employeeTwo);
+            employees.Push(employeeThree);
+            employees.Push(employeeFour);
+            employees.Push(employeeFive);
+
         }
     }
 }
