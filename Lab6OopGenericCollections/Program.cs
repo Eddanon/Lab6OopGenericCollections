@@ -101,7 +101,9 @@
              * Find() returns the first for which IsMale returns true,
              * or null if there is none.
              */
-            // Console.WriteLine($"First male employee: {employeeList.Find()}");
+            Employee firstMale = employeeList.Find(Employee.IsMale);
+            Console.WriteLine($"First male employee: {firstMale.Name}");
+
 
         }
     }
