@@ -104,6 +104,15 @@
             Employee firstMale = employeeList.Find(Employee.IsMale);
             Console.WriteLine($"First male employee: {firstMale.Name}");
 
+            // List containing all the male employees
+            // Male employees are added with the FindAll() and IsMale methods.
+            List<Employee> maleEmployeeList = employeeList.FindAll(Employee.IsMale);
+            Console.WriteLine("All male employees:");
+            foreach (Employee employee in maleEmployeeList)
+            {
+                employee.PrintInfo();
+            }
+
 
         }
     }
