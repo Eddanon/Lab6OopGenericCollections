@@ -42,6 +42,13 @@
             Console.WriteLine($"\nFired employee: {employees.Pop().Name}\n" +
                               $"Employees left: {employees.Count}");
 
+            // Add objects to stack again
+            employees.Push(employeeOne);
+            employees.Push(employeeTwo);
+            employees.Push(employeeThree);
+            employees.Push(employeeFour);
+            employees.Push(employeeFive);
+
         }
     }
 }
