@@ -31,6 +31,8 @@
              * items from a collection while it's being iterated
              * throws an InvalidOperationException.
              */
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("RETRIEVE USING POP() METHOD");
             Console.WriteLine($"\nFired employee: {employees.Pop().Name}\n" +
                               $"Employees left: {employees.Count}");
             Console.WriteLine($"\nFired employee: {employees.Pop().Name}\n" +
@@ -48,6 +50,15 @@
             employees.Push(employeeThree);
             employees.Push(employeeFour);
             employees.Push(employeeFive);
+
+            // Return two objects with Peek() method
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("RETRIEVE USING PEEK() METHOD");
+            for (int i = 0; i < 2; i++)
+            {
+                Console.WriteLine($"{employees.Peek().Name}");
+                Console.WriteLine($"Employees left in the stack: {employees.Count}");
+            }
 
         }
     }
